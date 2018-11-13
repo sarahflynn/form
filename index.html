@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Form Labt</title>
+    <title>Form Lab</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    
+    <label>
+        <form>
+            <label for="projectName">Project Name</label>
+            <input type="text" id="projectName" name="projectName"/>
+            <label for="shortDescription">Short Description</label>
+            <input type="text" maxlength="50" id="shortDescription" name="shortDescription"/>
+            <label for="fullDescription">Full Description</label>
+            <textarea id="fullDescription" name="fullDescription"></textarea>
+            <label for="featuredImage">Featured Image</label>
+            <input type="text" id="featuredImage" placeholder="Enter image URL" name="featuredImage"/>
+            <div class="languagesUsed">
+                <label for="languagesUsed">Languages Used</label>
+                <input type="checkbox" class="box" name="languagesUsed" value="JavaScript">JavaScript<br/>
+                <input type="checkbox" class="box" name="languagesUsed" value="HTML">HTML<br/>
+                <input type="checkbox" class="box" name="languagesUsed" value="CSS">CSS<br/>
+                <input type="checkbox" class="box" name="languagesUsed" value="Python">Python<br/>
+                <input type="checkbox" class="box" name="languagesUsed" value="Java">Java<br/>
+                <input type="checkbox" class="box" name="languagesUsed" value="C++">C++<br/>
+                <input type="checkbox" class="box" name="languagesUsed" value="Go">Go
+            </div>
+            <div class="frameworksUsed">
+                <label for="frameworksUsed">Frameworks Used</label>
+                <input type="checkbox" class="box" name="frameworksUsed" value="VueJS">VueJS<br/>
+                <input type="checkbox" class="box" name="frameworksUsed" value="React">React<br/>
+                <input type="checkbox" class="box" name="frameworksUsed" value="Ruby">Ruby<br/>
+                <input type="checkbox" class="box" name="frameworksUsed" value="Django">Django<br/>
+                <input type="checkbox" class="box" name="frameworksUsed" value="Express">Express<br/>
+                <input type="checkbox" class="box" name="frameworksUsed" value="Angular">Angular
+            </div>
+            <label for="groupOrIndividual">Group or Individual Project?</label>
+            <select name="groupOrIndividual" id="groupOrIndividual">
+                <option name="groupOrIndividual" value="individual">individual</option>
+                <option name="groupOrIndividual" value="group">group</option>
+            </select>
+            <button>Submit</button>
+        </form>
+    </label>
 </body>
 </html>
